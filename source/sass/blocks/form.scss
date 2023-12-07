@@ -13,7 +13,7 @@
 
 .form__wrapper {
   @include vp-1199 {
-    margin: 0 0 0 80px;
+    margin: 0 0 0 100px;
   }
 
   @include vp-1023 {
@@ -44,7 +44,7 @@
   }
 }
 
-.form h2 {
+.form__title {
   margin: 0;
   padding: 0;
   width: 500px;
@@ -70,7 +70,7 @@
   }
 }
 
-.form p {
+.form__description {
   margin: 0;
   padding: 0;
   width: 500px;
@@ -95,7 +95,7 @@
   }
 }
 
-.form span {
+.form__agreement {
   margin: 0;
   padding: 0;
   width: 320px;
@@ -116,28 +116,18 @@
 
 .form__form-wrapper {
   margin: 0 auto;
-  max-width: 680px;
-  min-width: 680px;
+  width: 680px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px 40px;
 
   @include vp-1199 {
-    max-width: 868px;
-    min-width: 668px;
-    gap: 30px 0;
-  }
-
-  @include vp-1023 {
-    max-width: 868px;
-    min-width: 668px;
+    margin: 0;
+    width: 668px;
     gap: 30px 28px;
   }
 
   @include vp-767 {
-    margin: 0;
-    max-width: none;
-    min-width: 280px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -227,7 +217,7 @@
   color: $color-white;
 }
 
-.form__btn {
+.form__button {
   width: 320px;
   min-height: 48px;
   padding: 11px;

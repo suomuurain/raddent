@@ -5,23 +5,6 @@
   position: relative;
 }
 
-.address h2 {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-
-  white-space: nowrap;
-
-  border: 0;
-
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
-}
-
 .address__wrapper {
   position: absolute;
 
@@ -48,7 +31,7 @@
   flex-direction: column
 }
 
-.address__info-wrapper b {
+.address__title {
   margin: 0 0 44px;
   padding: 0;
   width: 550px;
@@ -98,11 +81,21 @@
   padding: 0 0 0 45px;
 
   &--mail {
-    background: url("../img/svg/mail.svg") no-repeat left center / 24px 24px;
+    background: url("../img/svg/mail.svg") no-repeat left center / 25px 24px;
+
+    @include vp-767 {
+      padding: 0 0 0 20px;
+      background: url("../img/svg/mail.svg") no-repeat left center / 14px 11px;
+    }
   }
 
   &--address {
     background: url("../img/svg/pin.svg") no-repeat left center / 24px 30px;
+
+    @include vp-767 {
+      padding: 0 0 0 20px;
+      background: url("../img/svg/pin.svg") no-repeat left center / 14px 17px;
+    }
   }
 }
 
@@ -136,7 +129,7 @@
   }
 }
 
-.address__info-inner-wrapper p {
+.address__opening-hours {
   margin: 0;
   padding: 0;
   width: 182px;
@@ -162,7 +155,7 @@
 
 .address__subway-item {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 45px;
 
   color: $color-black-lighter;
   font-family: $ff-montserrat;
@@ -174,6 +167,14 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 20px; /* 142.857% */
+  }
+
+  &--blue {
+    background: url("../img/svg/subway-blue.svg") no-repeat left center / 23px 18px;
+  }
+
+  &--purple {
+    background: url("../img/svg/subway-purple.svg") no-repeat left center / 23px 18px;
   }
 }
 
