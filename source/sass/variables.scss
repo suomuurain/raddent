@@ -13,6 +13,7 @@ $color-transparent:rgba(255, 255, 255, 0);
 $color-black-lighter: #444444;
 $color-base-gray: #f8f8f8;
 $color-base-primary: #99c7ce;
+$color-base-primary-085:rgba(153, 199, 206, 0.85);
 $color-base-secondary: #4d92a3;
 $color-secondary-03: rgba(77, 146, 163, 0.3);
 $color-secondary-lighter: #a6c8d1;
@@ -20,6 +21,7 @@ $color-secondary-darker: #3d7482;
 $color-secondary-extra-darker: #2e5761;
 $color-error: #ed0233;
 $color-disabled: #d9d9d9;
+$color-light-gray: #b9b9b9;
 
 $button-shadow: 0px 8px 46px rgba(77, 146, 163, 0.4);
 
@@ -30,6 +32,7 @@ $gradient-button: linear-gradient(93deg, #4D92A3 47.42%, #99C7CE 69.66%, rgba(66
 
 $gradient-hero: linear-gradient(180deg, rgba(153, 199, 206, 0.70) 0%, rgba(251, 251, 251, 0.00) 100%), #fbfbfb;
 $gradient-primary-tb: linear-gradient(180deg, rgba(153, 199, 206, 0.70) 0%, rgba(251, 251, 251, 0.00) 100%);
+$gradient-reviews: linear-gradient(180deg, rgba(153, 199, 206, 0.30) 0%, rgba(255, 255, 255, 0.06) 100%), #ffffff;
 
 // Typography
 // ---------------------------------
@@ -58,6 +61,7 @@ $trans-600: 0.6s $tf-default;
 
 $vp-320: 320px;
 $vp-350: 350px;
+$vp-480: 480px;
 $vp-768: 768px;
 $vp-1024: 1024px;
 $vp-1200: 1200px;

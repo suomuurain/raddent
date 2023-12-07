@@ -188,12 +188,24 @@
   --swiper-navigation-color: var(--swiper-theme-color);
   */
 }
+// .swiper-button-prev,
+// .swiper-button-next {
+//   position: absolute;
+//   top: 50%;
+//   width: calc(var(--swiper-navigation-size) / 44 * 27);
+//   height: var(--swiper-navigation-size);
+//   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+//   z-index: 10;
+//   cursor: pointer;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: var(--swiper-navigation-color, var(--swiper-theme-color));
+// }
 .swiper-button-prev,
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
   margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
   z-index: 10;
   cursor: pointer;
@@ -201,6 +213,17 @@
   align-items: center;
   justify-content: center;
   color: var(--swiper-navigation-color, var(--swiper-theme-color));
+
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  transition: 0.3s ease;
+
+  @media (max-width: 767px) {
+    width: 32px;
+    height: 32px;
+  }
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
@@ -218,14 +241,52 @@
 .swiper-navigation-disabled .swiper-button-next {
   display: none !important;
 }
+// .swiper-button-prev:after,
+// .swiper-button-next:after {
+//   font-family: swiper-icons;
+//   font-size: var(--swiper-navigation-size);
+//   text-transform: none !important;
+//   letter-spacing: 0;
+//   font-variant: initial;
+//   line-height: 1;
+// }
 .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
-  font-size: var(--swiper-navigation-size);
+  font-size: 32px;
   text-transform: none !important;
   letter-spacing: 0;
   font-variant: initial;
   line-height: 1;
+
+  color: #99C7CE;
+  width: 16px;
+  height: 32px;
+  transition: 0.3s ease;
+
+  @media (max-width: 767px) {
+    font-size: 19px;
+    width: 10px;
+    height: 20px;
+  }
+}
+
+// добавлены состояния
+.swiper-button-next:hover,
+.swiper-button-next:focus,
+.swiper-button-prev:focus,
+.swiper-button-prev:hover {
+  border: 2px solid #99C7CE;
+  outline: none;
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  background-color: #99C7CE;
+
+  &::after {
+    color: #ffffff;
+  }
 }
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
