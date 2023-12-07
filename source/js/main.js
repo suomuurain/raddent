@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {initTabs} from './vendor/tabs/init-tabs';
 import {initAccordions} from './vendor/accordions/init-accordion';
+import './modules/founder-swiper';
 
 // ---------------------------------
 
