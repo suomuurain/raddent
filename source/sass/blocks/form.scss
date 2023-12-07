@@ -1,6 +1,11 @@
 .form {
   padding: 86px 0 71px;
-  background-color: $color-base-primary;
+  background-image:
+    linear-gradient(to top, $color-base-primary-085, $color-base-primary-085),
+    url("../img/bg-form.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @include vp-1199 {
     padding: 60px 0;
