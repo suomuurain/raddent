@@ -14,6 +14,7 @@ $color-black-lighter: #444444;
 $color-base-gray: #f8f8f8;
 $color-base-primary: #99c7ce;
 $color-base-primary-085:rgba(153, 199, 206, 0.85);
+$color-base-primary-03:rgba(153, 199, 206, 0.3);
 $color-base-secondary: #4d92a3;
 $color-secondary-03: rgba(77, 146, 163, 0.3);
 $color-secondary-lighter: #a6c8d1;
@@ -23,8 +24,10 @@ $color-primary-darker: #56a2ae;
 $color-error: #ed0233;
 $color-disabled: #d9d9d9;
 $color-light-gray: #b9b9b9;
+$color-switcher: #f7f3f0;
 
 $button-shadow: 0px 8px 46px rgba(77, 146, 163, 0.4);
+$card-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 // Gradient
 
@@ -63,6 +66,7 @@ $trans-600: 0.6s $tf-default;
 $vp-320: 320px;
 $vp-350: 350px;
 $vp-480: 480px;
+$vp-600: 600px;
 $vp-768: 768px;
 $vp-1024: 1024px;
 $vp-1200: 1200px;
