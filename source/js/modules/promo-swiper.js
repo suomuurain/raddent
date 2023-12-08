@@ -7,8 +7,16 @@ const swiperPromo = new Swiper('.promo__swiper', {
     320: {
       slidesPerView: 1,
     },
+    600: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
     768: {
       slidesPerView: 1,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 30,
     },
     1200: {
       slidesPerView: 3,
@@ -30,7 +38,7 @@ const swiperPromo = new Swiper('.promo__swiper', {
   autoHeight: true,
 
   autoplay: {
-    delay: 5000,
+    delay: 4000,
     disableOnInteraction: false,
   },
 });
