@@ -13,6 +13,15 @@
 
 .reviews__slider-wrapper {
   position: relative;
+  margin: 0 0 70px;
+
+  @include vp-1199 {
+    margin: 0 0 60px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 30px;
+  }
 }
 
 .reviews__swiper {
@@ -221,7 +230,7 @@
 
 .reviews__swiper-button {
   position: absolute;
-  top: 50%;
+  top: 170px;
   transition: $trans-default;
 
   &--prev {
@@ -275,6 +284,8 @@
   }
 
   @include vp-479 {
+    top: 200px;
+
     &--prev {
       left: calc((100% - 226px) / 2 - 40px);
     }
@@ -282,5 +293,164 @@
     &--next {
       right: calc((100% - 226px) / 2 - 40px);
     }
+  }
+}
+
+.reviews__button-wrapper {
+  margin: 0 auto;
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 1200px) and (max-width: 1300px) {
+    max-width: 880px;
+  }
+
+  @include vp-1199 {
+    max-width: 770px;
+    gap: 24px;
+  }
+
+  @include vp-1023 {
+    max-width: 668px;
+  }
+
+  @include vp-767 {
+    max-width: 320px;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @include vp-479 {
+    max-width: 226px;
+  }
+}
+
+.reviews__button-review {
+  padding: 12px;
+  width: 320px;
+
+  color: $color-white;
+  background: $color-base-secondary;
+  border: none;
+  border-radius: 30px;
+  box-shadow: $button-shadow;
+
+  @include vp-1199 {
+    width: 200px;
+  }
+
+  @include vp-767 {
+    width: 320px;
+  }
+
+  @include vp-479 {
+    width: 226px;
+  }
+
+  &:hover,
+  &:focus {
+    background: $color-secondary-darker;
+    outline: none;
+  }
+
+  &:active {
+    background: $color-secondary-extra-darker;
+  }
+
+  &:disabled,
+  &--disabled {
+    background: $color-disabled;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.reviews__button-appeal {
+  padding: 12px;
+  width: 223px;
+
+  color: $color-base-secondary;
+  background-color: $color-white;
+  border: 1px solid $color-base-secondary;
+  border-radius: 30px;
+  transform: translate(-50px);
+
+  @media (min-width: 1200px) and (max-width: 1300px) {
+    transform: translate(0px);
+  }
+
+  @include vp-1199 {
+    width: 200px;
+    transform: translate(0px);
+  }
+
+  @include vp-767 {
+    width: 320px;
+  }
+
+  @include vp-479 {
+    width: 226px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-white;
+    background: $color-secondary-darker;
+    border: 1px solid $color-secondary-darker;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-white;
+    background: $color-secondary-extra-darker;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: $color-white;
+    background: $color-disabled;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.reviews__button-all-reviews {
+  padding: 12px;
+  width: 240px;
+
+  color: $color-white;
+  background: $color-base-primary;
+  border: none;
+  border-radius: 30px;
+
+  @include vp-1199 {
+    width: 220px;
+  }
+
+  @include vp-767 {
+    width: 320px;
+  }
+
+  @include vp-479 {
+    width: 226px;
+  }
+
+  &:hover,
+  &:focus {
+    background: $color-primary-darker;
+    outline: none;
+  }
+
+  &:active {
+    background: $color-secondary-extra-darker;
+  }
+
+  &:disabled,
+  &--disabled {
+    background: $color-disabled;
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
