@@ -97,7 +97,7 @@
 
 .hero__item {
   margin: 0;
-  padding: 0 0 0 18px;
+  padding: 0 0 0 20px;
   color: $color-black-lighter;
   font-family: $ff-montserrat;
   font-size: 20px;
@@ -114,8 +114,8 @@
     border-radius: 50%;
     background-color: $color-base-secondary;
     position: absolute;
-    left: 0;
-    top: 50%;
+    left: 3px;
+    top: 16px;
     transform: translateY(-50%);
   }
 

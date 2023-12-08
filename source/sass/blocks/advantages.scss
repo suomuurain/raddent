@@ -75,7 +75,7 @@
 
 .advantages__subtitle {
   margin: 0 0 24px;
-  padding: 0;
+  padding: 0 0 0 20px;
 
   color: $color-white;
   font-family: $ff-montserrat;
@@ -83,6 +83,20 @@
   font-style: normal;
   font-weight: 600;
   line-height: 36px; /* 150% */
+
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $color-base-secondary;
+    position: absolute;
+    left: 3px;
+    top: 18px;
+    transform: translateY(-50%);
+  }
 
   @include vp-1199 {
     margin: 0 0 24px;
