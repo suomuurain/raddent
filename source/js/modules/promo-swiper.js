@@ -28,6 +28,11 @@ const swiperPromo = new Swiper('.promo__swiper', {
 
   grabCursor: true,
   autoHeight: true,
+
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
 });
 
 export {swiperPromo};

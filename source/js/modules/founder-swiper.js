@@ -16,6 +16,11 @@ const swiperFounder = new Swiper('.about-founder__swiper', {
 
   grabCursor: true,
   autoHeight: true,
+
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
 });
 
 export {swiperFounder};
