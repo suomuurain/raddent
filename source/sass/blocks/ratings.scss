@@ -38,7 +38,7 @@
   padding: 0 120px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @include vp-1199 {
     padding: 0 20px;
@@ -55,6 +55,10 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: 18px;
   justify-items: center;
+
+  @include vp-1199 {
+    width: 100px;
+  }
 }
 
 .ratings__img-wrapper {
