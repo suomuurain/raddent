@@ -188,6 +188,7 @@
   background-color: $color-white;
   border: 1px solid $color-base-secondary;
   border-radius: 30px;
+  transition: $trans-default;
 
   @include vp-767 {
     width: 40%;
@@ -200,11 +201,13 @@
     background: $color-secondary-darker;
     border: 1px solid $color-secondary-darker;
     outline: none;
+    transition: $trans-default;
   }
 
   &:active {
     color: $color-white;
     background: $color-secondary-extra-darker;
+    transition: $trans-default;
   }
 
   &:disabled,
@@ -225,6 +228,7 @@
   border: none;
   border-radius: 30px;
   box-shadow: $button-shadow;
+  transition: $trans-default;
 
   @include vp-767 {
     width: 40%;
@@ -235,10 +239,12 @@
   &:focus {
     background: $color-secondary-darker;
     outline: none;
+    transition: $trans-default;
   }
 
   &:active {
     background: $color-secondary-extra-darker;
+    transition: $trans-default;
   }
 
   &:disabled,

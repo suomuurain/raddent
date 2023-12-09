@@ -235,6 +235,7 @@
   background: $color-base-primary;
   border: none;
   border-radius: 30px;
+  transition: $trans-default;
 
   @include vp-767 {
     width: 100%;
@@ -244,10 +245,12 @@
   &:focus {
     background: $color-primary-darker;
     outline: none;
+    transition: $trans-default;
   }
 
   &:active {
     background: $color-secondary-extra-darker;
+    transition: $trans-default;
   }
 
   &:disabled,

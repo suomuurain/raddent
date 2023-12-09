@@ -267,7 +267,8 @@
 
   &:active {
     border: 1px solid $color-secondary-extra-darker;
-    color: $color-secondary-extra-darker;
+    background-color: $color-secondary-extra-darker;
+    transition: $trans-default;
   }
 
   &:disabled {

@@ -336,6 +336,7 @@
   border: none;
   border-radius: 30px;
   box-shadow: $button-shadow;
+  transition: $trans-default;
 
   @include vp-1199 {
     width: 200px;
@@ -353,10 +354,12 @@
   &:focus {
     background: $color-secondary-darker;
     outline: none;
+    transition: $trans-default;
   }
 
   &:active {
     background: $color-secondary-extra-darker;
+    transition: $trans-default;
   }
 
   &:disabled,
@@ -376,6 +379,7 @@
   border: 1px solid $color-base-secondary;
   border-radius: 30px;
   transform: translate(-50px);
+  transition: $trans-default;
 
   @media (min-width: 1200px) and (max-width: 1300px) {
     transform: translate(0px);
@@ -400,11 +404,13 @@
     background: $color-secondary-darker;
     border: 1px solid $color-secondary-darker;
     outline: none;
+    transition: $trans-default;
   }
 
   &:active {
     color: $color-white;
     background: $color-secondary-extra-darker;
+    transition: $trans-default;
   }
 
   &:disabled,
@@ -424,6 +430,7 @@
   background: $color-base-primary;
   border: none;
   border-radius: 30px;
+  transition: $trans-default;
 
   @include vp-1199 {
     width: 220px;
@@ -441,10 +448,12 @@
   &:focus {
     background: $color-primary-darker;
     outline: none;
+    transition: $trans-default;
   }
 
   &:active {
     background: $color-secondary-extra-darker;
+    transition: $trans-default;
   }
 
   &:disabled,

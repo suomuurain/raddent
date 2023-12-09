@@ -31,8 +31,8 @@ $card-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 // Gradient
 
-$gradient-button: linear-gradient(93deg, #4D92A3 47.42%, #99C7CE 69.66%, rgba(66, 174, 202, 0.75) 86.83%);
-
+// $gradient-button: linear-gradient(93deg, #4D92A3 47.42%, #99C7CE 69.66%, rgba(66, 174, 202, 0.75) 86.83%);
+$gradient-button: linear-gradient(93deg, #4D92A3, #99C7CE, rgba(66, 174, 202, 0.75), #99C7CE, #4D92A3);
 
 $gradient-hero: linear-gradient(180deg, rgba(153, 199, 206, 0.70) 0%, rgba(251, 251, 251, 0.00) 100%), #fbfbfb;
 $gradient-primary-tb: linear-gradient(180deg, rgba(153, 199, 206, 0.70) 0%, rgba(251, 251, 251, 0.00) 100%);
@@ -53,7 +53,7 @@ $ff-montserrat: "Montserrat", "Arial", sans-serif;
 // ---------------------------------
 
 $tf-default: ease-out;
-$trans-default: 0.6s $tf-default;
+$trans-default: 0.3s $tf-default;
 
 // если требуется изинг отличный от $tf-default, то переменную называем не цифрой
 $trans-modal: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
@@ -77,3 +77,9 @@ $vp-1440: 1440px;
 
 $retina-dpi: 144dpi;
 $retina-dppx: 2dppx;
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
