@@ -1574,6 +1574,12 @@ button,
   bottom: 60px;
   right: 120px;
 }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero::before {
+    background: -webkit-image-set(url("../img/big-tooth-desktop@2x.webp") type("image/webp"), url("../img/big-tooth-desktop@2x.png") type("image/png")) no-repeat center center/cover;
+    background: image-set(url("../img/big-tooth-desktop@2x.webp") type("image/webp"), url("../img/big-tooth-desktop@2x.png") type("image/png")) no-repeat center center/cover;
+  }
+}
 @media (max-width: 1023px) {
   .hero::before {
     bottom: 0;
