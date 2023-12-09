@@ -8,6 +8,13 @@
   background-size: cover;
   background-position: center;
 
+  @media (min-resolution: $retina-dppx) and (min-width: $vp-1200) {
+    background-image:
+    linear-gradient(to top, $color-base-primary-085, $color-base-primary-085),
+    image-set(url("../img/bg-desktop@2x.webp") type("image/webp"),
+    url("../img/bg-desktop@2x.jpg") type("image/jpg"));
+  }
+
 
   @include vp-1199 {
     padding: 60px 10px 60px;
@@ -18,6 +25,13 @@
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-position: top;
+
+    @media (min-resolution: $retina-dppx) and (min-width: $vp-768) {
+      background-image:
+      linear-gradient(to top, $color-base-primary-085, $color-base-primary-085),
+      image-set(url("../img/bg-tablet@2x.webp") type("image/webp"),
+      url("../img/bg-tablet@2x.jpg") type("image/jpg"));
+    }
   }
 
   @include vp-767 {
@@ -29,6 +43,13 @@
     background-repeat: no-repeat, no-repeat;
     background-size: cover;
     background-position: top;
+
+    @media (min-resolution: $retina-dppx) and (min-width: $vp-320) {
+      background-image:
+      linear-gradient(to top, $color-base-primary-085, $color-base-primary-085),
+      image-set(url("../img/bg-mobile@2x.webp") type("image/webp"),
+      url("../img/bg-mobile@2x.jpg") type("image/jpg"));
+    }
   }
 }
 

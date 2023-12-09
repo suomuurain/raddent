@@ -8,6 +8,13 @@
   background-size: cover;
   background-position: center;
 
+  @media (min-resolution: $retina-dppx) {
+    background-image:
+    linear-gradient(to top, $color-base-primary-085, $color-base-primary-085),
+    image-set(url("../img/bg-form@2x.webp") type("image/webp"),
+    url("../img/bg-form@2x.jpg") type("image/jpg"));
+  }
+
   @include vp-1199 {
     padding: 60px 0;
   }
@@ -259,7 +266,7 @@
   &:hover,
   &:focus {
     border: 1px solid $color-secondary-darker;
-
+    border-radius: 30px;
     background-color: $color-secondary-darker;
     outline: none;
     transition: $trans-default;
