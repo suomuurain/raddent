@@ -63,6 +63,43 @@
   }
 }
 
+.services__item {
+
+  @include vp-1199 {
+    &--therapy {
+      order: -3;
+    }
+
+    &--implantation {
+      order: -3;
+    }
+
+    &--veneers {
+      order: -1;
+    }
+
+    &--surgery {
+      order: -2;
+    }
+
+    &--prosthetics {
+      order: -2;
+    }
+
+    &--teddy {
+      order: -1;
+    }
+
+    &--orthodontics {
+      order: 0;
+    }
+
+    &--hygiene {
+      order: -1;
+    }
+  }
+}
+
 .services__link {
   margin: 0;
   padding: 0 0 0 25px;
@@ -72,15 +109,18 @@
   justify-content: start;
   align-items: center;
   gap: 15px;
+  transition: $trans-default;
 
   &:hover,
   &:focus {
     outline: none;
     opacity: 0.8;
+    transition: $trans-default;
   }
 
   &:active {
     opacity: 0.5;
+    transition: $trans-default;
   }
 
   &:disabled,
