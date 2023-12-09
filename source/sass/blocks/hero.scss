@@ -14,6 +14,12 @@
     bottom: 60px;
     right: 120px;
 
+    @media (min-resolution: $retina-dppx) {
+      background:
+      image-set(url("../img/big-tooth-desktop@2x.webp") type("image/webp"),
+      url("../img/big-tooth-desktop@2x.png") type("image/png")) no-repeat center center/cover;
+    }
+
     @include vp-1023 {
       bottom: 0;
       right: 31px;
