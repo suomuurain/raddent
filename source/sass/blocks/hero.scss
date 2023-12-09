@@ -7,7 +7,9 @@
     content: "";
     width: 429px;
     height: 407px;
-    background: url("../img/big-tooth-desktop.png") no-repeat center center/cover;
+    background:
+      image-set(url("../img/big-tooth-desktop.webp") type("image/webp"),
+      url("../img/big-tooth-desktop.png") type("image/png")) no-repeat center center/cover;
     position: absolute;
     bottom: 60px;
     right: 120px;
@@ -117,6 +119,10 @@
     left: 3px;
     top: 16px;
     transform: translateY(-50%);
+
+    @include vp-767 {
+      top: 10px;
+    }
   }
 
   @include vp-767 {
@@ -143,7 +149,7 @@
 
   @include vp-767 {
     margin: 0 0 192px;
-    width: 100%;
+    width: 260px;
     font-size: 14px;
     line-height: 20px; /* 142.857% */
   }

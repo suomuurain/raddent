@@ -124,10 +124,10 @@
 }
 
 .doctors__img-wrapper img {
-  border-radius: 16px;
   object-fit: contain;
-  height: 100%;
+  // height: 100%;
   width: 100%;
+  height: auto;
 }
 
 .doctors__subtitle {
@@ -184,7 +184,6 @@
 
   @include vp-767 {
     font-size: 14px;
-    letter-spacing: -1px;
   }
 
   &:hover,

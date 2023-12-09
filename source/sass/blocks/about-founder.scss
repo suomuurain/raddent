@@ -7,6 +7,7 @@
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  align-items: center;
 
   @include vp-1199 {
     flex-direction: column-reverse;
@@ -46,7 +47,7 @@
 // info
 
 .about-founder__inner-wrapper {
-  padding: 80px 20px 65px 46px;
+  padding: 80px 20px 65px 45px;
 
   @include vp-1199 {
     padding: 60px 60px 35px;
@@ -146,8 +147,8 @@
     @include vp-767 {
       width: 105px;
       height: 30px;
-      top: 33px;
-      right: 27px;
+      top: 25px;
+      left: 50%;
     }
   }
 
@@ -172,7 +173,8 @@
   align-items: center;
 
   @include vp-767 {
-    gap: 0;
+    gap: 20px;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -188,7 +190,8 @@
   border-radius: 30px;
 
   @include vp-767 {
-    width: 130px;
+    width: 40%;
+    min-width: 130px;
   }
 
   &:hover,
@@ -224,7 +227,8 @@
   box-shadow: $button-shadow;
 
   @include vp-767 {
-    width: 130px;
+    width: 40%;
+    min-width: 130px;
   }
 
   &:hover,
