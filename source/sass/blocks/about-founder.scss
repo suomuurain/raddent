@@ -17,7 +17,7 @@
 .about-founder__slider-wrapper {
   width: 720px;
 
-  @include vp-1199 {
+  @include vp-1023 {
     width: 100%;
   }
 
@@ -29,18 +29,24 @@
 .about-founder__img-wrapper {
   @include vp-1199 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    width: 720px;
+    padding: 0;
+  }
+
+  @include vp-1023 {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: calc(100% + 40px);
+    padding: 0;
   }
 }
 
 .about-founder__img-wrapper img {
-  display: block;
-  width: 720px;
-  height: 677px;
-
-  @include vp-767 {
-    width: 320px;
-    height: 300px;
+  @include vp-1023 {
+    width: 100%;
   }
 }
 
