@@ -1,0 +1,235 @@
+.accordion__element {
+  position: relative;
+  border-top: 1px solid $color-base-primary;
+  min-height: 90px;
+
+  &:last-child {
+    border-bottom: 1px solid $color-base-primary;
+  }
+
+  @include vp-767 {
+    min-height: 72px;
+  }
+
+  @include vp-479 {
+    min-height: 94px;
+  }
+
+  &--large-dt {
+    @media (min-width: 1200px) and (max-width: 1300px) {
+      min-height: 114px;
+    }
+  }
+
+  &--large {
+    @include vp-1199 {
+      min-height: 98px;
+    }
+
+    @include vp-767 {
+      min-height: 88px;
+    }
+
+    @include vp-479 {
+      min-height: 110px;
+    }
+  }
+
+  &--large-mobile {
+    @include vp-767 {
+      min-height: 88px;
+    }
+
+    @include vp-479 {
+      min-height: 110px;
+    }
+  }
+}
+
+.accordion__element h3 {
+  color: $color-base-secondary;
+  font-family: $ff-montserrat;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+
+  margin: 0;
+  padding: 33px 90px 33px 0;
+  text-align: left;
+
+  @include vp-1199 {
+    padding: 33px 48px 33px 0;
+  }
+
+  @include vp-767 {
+    padding: 25px 42px 25px 0;
+
+    font-size: 18px;
+    line-height: normal;
+  }
+}
+
+.accordion__element--large h3 {
+  @include vp-1199 {
+    padding: 26px 100px 24px 0;
+  }
+
+  @include vp-767 {
+    padding: 22px 50px 22px 0;
+  }
+}
+
+.accordion__element--large-mobile h3 {
+  @include vp-767 {
+    padding: 22px 50px 22px 0;
+  }
+}
+
+.accordion__btn {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid $color-base-secondary;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: $trans-default;
+
+  @include vp-1199 {
+    top: 26px;
+  }
+
+  @include vp-767 {
+    top: calc(50% - 15px);
+    width: 30px;
+    height: 30px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: $color-base-secondary;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center;
+
+    @include vp-767 {
+      width: 14px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: $color-base-secondary;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    transition: 0.3s transform ease;
+
+    @include vp-767 {
+      width: 14px;
+    }
+  }
+
+  @include hover-focus {
+    background-color: $color-base-secondary;
+    transition: $trans-default;
+    outline: none;
+
+    &::before {
+      background-color: $color-white;
+    }
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.accordion__element.is-active .accordion__btn {
+  border: 1px solid $color-base-secondary;
+  border-radius: 50%;
+  background-color: $color-base-secondary;
+
+  &::before {
+    background-color: $color-white;
+  }
+
+  &::after {
+    background-color: $color-white;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  @include vp-767 {
+    top: 27px;
+  }
+}
+
+.accordion__content {
+  margin: -45px 0 25px;
+  padding: 0 165px 0 0;
+
+  color: $color-black-lighter;
+  font-family: $ff-montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+
+  @include vp-1199 {
+    margin: -29px 0 25px;
+    padding: 0 120px 0 0;
+
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+
+  @include vp-767 {
+    margin: -25px 0 25px;
+    padding: 0 15px 0 0;
+
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.28px;
+  }
+}
+
+.accordion__wrapper p {
+  margin: 24px 0 0;
+
+  color: $color-black-lighter;
+  font-family: $ff-montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+
+  @include vp-1199 {
+    margin: 18px 0 0;
+
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+
+  @include vp-767 {
+    margin: 22px 0 0;
+
+    font-size: 14px;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: -0.28px;
+  }
+}
